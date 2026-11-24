@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask POST</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Input Nama</h2>
+
+        <form method="POST">
+            <label for="nama">Masukkan Nama:</label>
+
+            <input type="text"
+                id="nama"
+                name="nama"
+                placeholder="Masukkan nama kamu"
+                required>
+
+            <button type="submit">Kirim</button>
+        </form>
+
+        <h3>{{ hasil }}</h3>
+    </div>
+
+</body>
+</html>
